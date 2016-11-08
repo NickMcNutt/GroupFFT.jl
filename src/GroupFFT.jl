@@ -1,5 +1,10 @@
 module GroupFFT
 
-# package code goes here
+using Groups
 
-end # module
+export
+    fft
+
+include("fft_O3.jl")
+
+end
